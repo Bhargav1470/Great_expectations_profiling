@@ -1,0 +1,621 @@
+{
+  "evaluation_parameters": {},
+  "meta": {
+    "active_batch_definition": {
+      "batch_identifiers": {},
+      "data_asset_name": "gx_new .csv",
+      "data_connector_name": "default_inferred_data_connector_name",
+      "datasource_name": "my_datasource"
+    },
+    "batch_markers": {
+      "ge_load_time": "20240207T125410.750159Z",
+      "pandas_data_fingerprint": "147a43402c62af630c7921cd555c0ffd"
+    },
+    "batch_spec": {
+      "path": "/home/sigmoid/Desktop/great_expectations/gx/../data/gx_new .csv"
+    },
+    "checkpoint_id": null,
+    "checkpoint_name": "gx_new .csv_great_profiling",
+    "expectation_suite_name": "great_profiling",
+    "great_expectations_version": "0.18.8",
+    "run_id": {
+      "run_name": null,
+      "run_time": "2024-02-07T18:24:10.730759+05:30"
+    },
+    "validation_id": null,
+    "validation_time": "20240207T125410.762441Z"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_row_count_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "max_value": 10,
+          "min_value": 10
+        },
+        "meta": {
+          "profiler_details": {
+            "metric_configuration": {
+              "domain_kwargs": {},
+              "metric_name": "table.row_count",
+              "metric_value_kwargs": null
+            },
+            "num_batches": 1
+          }
+        }
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 10
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_columns_to_match_set",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column_set": [
+            "Salary",
+            "Age",
+            "ID",
+            "Name"
+          ],
+          "exact_match": null
+        },
+        "meta": {
+          "profiler_details": {
+            "success_ratio": 1.0
+          }
+        }
+      },
+      "meta": {},
+      "result": {
+        "observed_value": [
+          "Name",
+          "Age",
+          "Salary",
+          "ID"
+        ]
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_mean_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "Age",
+          "max_value": null,
+          "min_value": 0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 37.9
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_sum_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "Age"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 379
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_median_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "Age"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 36.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_min_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "Age"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 23
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_max_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "Age"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 56
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_stdev_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "Age"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 11.454741861391339
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_unique_value_count_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "Age"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 10
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_value_lengths_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "Age",
+          "max_value": null,
+          "min_value": 0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 10,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_mean_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "Salary",
+          "max_value": null,
+          "min_value": 0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 44628.2
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_sum_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "Salary"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 446282
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_median_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "Salary"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 45430.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_min_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "Salary"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 29000
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_max_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "Salary"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 60330
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_stdev_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "Salary"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 10940.371614651243
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_unique_value_count_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "Salary"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 10
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_value_lengths_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "Salary",
+          "max_value": null,
+          "min_value": 0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 10,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_mean_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "ID",
+          "max_value": null,
+          "min_value": 0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 413.5
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_sum_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "ID"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 4135
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_median_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "ID"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 234.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_min_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "ID"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 123
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_max_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "ID"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 898
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_stdev_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "ID"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 278.20825532922873
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_unique_value_count_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "ID"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 10
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_value_lengths_to_be_between",
+        "kwargs": {
+          "batch_id": "24df2566a76c9baccb60792a946c8c06",
+          "column": "ID",
+          "max_value": null,
+          "min_value": 0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 10,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 26,
+    "success_percent": 100.0,
+    "successful_expectations": 26,
+    "unsuccessful_expectations": 0
+  },
+  "success": true
+}
